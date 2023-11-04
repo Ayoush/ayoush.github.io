@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
         }
 
         header {
@@ -48,7 +48,29 @@
         }
 
         th {
-            background-color: #f0f0f0;
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .framework-section {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h2.framework-title {
+            font-size: 24px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -77,17 +99,19 @@
                 <!-- You can add your daily solutions as rows in this table -->
                 <tr>
                     <td>2023-11-03</td>
-                    <td>Two Sum</td>
-                    <td>Python code</td>
-                    <td>Explanation</td>
+                    <td><a href="#">Two Sum</a></td>
+                    <td><a href="#">Python code</a></td>
+                    <td><a href="#">Explanation</a></td>
                     <td>Coding</td>
                 </tr>
                 <!-- Add more rows as needed -->
             </tbody>
         </table>
 
-        <h2>Loner Framework</h2>
-        <p>The Loner Framework is a collection of essential modules for system design. These modules are designed to simplify the testing of architectural components such as CDN, server, and DNS in a fast and efficient manner.</p>
+        <div class="framework-section">
+            <h2 class="framework-title">Loner Framework</h2>
+            <p>The Loner Framework is a collection of essential modules for system design. These modules are designed to simplify the testing of architectural components such as CDN, server, and DNS in a fast and efficient manner. <a href="#">Learn more about Loner Framework</a></p>
+        </div>
     </div>
 </body>
 </html>
