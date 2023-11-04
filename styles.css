@@ -1,44 +1,99 @@
+/* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0e8ff; /* Light purple background color */
+    background: linear-gradient(to right, white, blue, purple);
+    color: #333;
 }
 
+/* Header styles for navigation */
 header {
-    background-color: #6a0572; /* Dark purple header background color */
-    color: #fff;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Home section styles */
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+.intro-container {
     padding: 20px;
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: bold;
+.intro-text {
+    font-size: 24px;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.animated-text {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.1s;
 }
 
-.top-bar {
-    background-color: #ffffff; /* White top bar background color */
-    color: #6a0572; /* Dark purple text color */
-    padding: 10px;
+.profile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    transition: opacity 0.3s;
+}
+
+.download-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 20px;
     text-align: center;
 }
 
-.social-icons a {
-    color: #6a0572; /* Dark purple color for social icons */
+.download-button a {
     text-decoration: none;
-    font-size: 18px;
+    color: #333;
 }
 
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    align-items: center;
+/* Leetcode and Loner section styles */
+section {
+    padding: 20px;
 }
 
-/* Add your custom CSS here */
+/* Footer styles for social links and skills section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    margin: 10px;
+}
+
+.skills {
+    margin-top: 20px;
+}
