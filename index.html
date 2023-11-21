@@ -23,11 +23,20 @@
             <tr>
                 <td>1</td>
                 <td>23-10-2023</td>
-                <td>217. Contains Duplicat <br> Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.</td>
+                <td>217. Contains Duplicate <br> Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.</td>
                 <td><a href="https://gist.github.com/Ayoush/93c084bd0ed92e254974cc7dd5e3f870">Solution Link 1</a></td>
                 <td>Just sort out the entire list and in one traverse you can see if the previous element matches. If you ran out of size then it means the entire list doesn't contain any duplicates</td>
                 <td>Array</td>
                 <td>Traversing</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>23-10-2023</td>
+                <td>242. Valid Anagram <br> Given two strings s and t, return true if t is an anagram of s, and false otherwise.An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.</td>
+                <td><a href="https://gist.github.com/Ayoush/ab3a90412b742fd57fb54de54e232c33">Solution Link 1</a></td>
+                <td>So my go to solution for this. The first check if two string length is of different length then there is no chance it would be anagram. After this we will put two hash list and for each element check if the existing element is already there in opposite hash list and then remove it else add it to there hash list. At the end if both the hash list are empty at the end then return true else false</td>
+                <td>String</td>
+                <td>Anagram, Hash</td>
             </tr>
         </table>
     </div>
